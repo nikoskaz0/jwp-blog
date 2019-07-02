@@ -19,7 +19,7 @@ public class HelloWorldControllerTests {
     @Test
     public void passParamWithGet() throws Exception {
         String blogName = "helloWrold";
-        webTestClient.get().uri("/helloworld?blogName="+blogName)
+        webTestClient.get().uri("/helloworld?blogName=" + blogName)
                 .exchange()
                 .expectStatus().isOk()
                 .expectBody()
